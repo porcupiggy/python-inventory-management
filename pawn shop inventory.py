@@ -50,7 +50,7 @@ def pawn_shop_inventory():
             else:
                 n = len(inventory)
                 for i in range(n):
-                    for j in range(0, n - i - 1): # i used the bubble sort that jamie taught me, it was the only thing i could rememeber during the test LOL
+                    for j in range(0, n - i - 1): 
                         if inventory[j]['name'] > inventory[j + 1]['name']:
                             inventory[j], inventory[j + 1] = inventory[j + 1], inventory[j]
                 for item in inventory:
@@ -64,4 +64,5 @@ def pawn_shop_inventory():
 
 
 pawn_shop_inventory()
+
 
